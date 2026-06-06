@@ -4,21 +4,12 @@ pipeline {
 
     stages {
 
-        stage("Hello") {
-            when {
-                expression { env.BRANCH_NAME == 'main' } 
-            }
+        stage("BUILD") {
+          
             steps {
-                    echo 'this is the main branch'
+                    echo 'this is a test branch'
             }
         }
-        stage('Wildcard Branch Check') {
-            when {
-                branch 'feature/*' 
-            }
-            steps {
-                echo "Running on a feature branch."
-            }
-        }
+        
     }
 }
