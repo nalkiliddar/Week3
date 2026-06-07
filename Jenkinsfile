@@ -49,5 +49,13 @@ pipeline {
                 }
             }
         }
+
+        stage("Build") {
+            
+            steps {
+                    echo 'this is the main branch'
+            }
+        }
+        
     }
 }
