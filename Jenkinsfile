@@ -8,7 +8,7 @@ pipeline {
                     stages {
                         stage('Build') {
                             steps {
-                                sleep 300
+                                sleep 60
                                 echo 'this is pipeline 1'
                             }
                         }
@@ -19,7 +19,7 @@ pipeline {
                     stages {
                         stage('Build') {
                             steps {
-                                sleep 300
+                                sleep 60
                                 echo 'this is pipeline 2'
                             }
                         }
@@ -30,7 +30,7 @@ pipeline {
                     stages {
                         stage('Build') {
                             steps {
-                                sleep 300
+                                sleep 60
                                 echo 'this is pipeline 3'
                             }
                         }
@@ -41,7 +41,7 @@ pipeline {
                     stages {
                         stage('Build') {
                             steps {
-                                sleep 300
+                                sleep 60
                                 echo 'this is pipeline 4'
                             }
                         }
